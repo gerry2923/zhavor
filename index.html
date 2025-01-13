@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="тетовыеДляЖаворонка/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-footer.css">
+  <title>Zavoronok</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="ltBlock2128608155" data-block-id="2128608155"
+    class="lt-block lt-view menu01 lt-menu lt-menu-universal positionfixed mobile-toggler style-normal gc-into-main-content"
+    data-code="b-a15fe">
+
+    <div class="lt-block-wrapper">
+      <div class="menu-wrapper" data-menu="yes">
+
+        <div class="collapsed-view">
+
+          <div class="toggler">
+            <span class="fa fa-bars"></span>
+          </div>
+
+          <div class="collapsed-content">
+            <div class="f-header fg-color">
+              <p><a><img src="images/icons/logo-text-black.svg" alt="logo Zhavoronok centr"></a></p>
+            </div>
+          </div>
+
+          <div class="collapsed-contacts fg-color">
+            <p>
+              <a href="tel:+79647736059">
+              </a>
+            </p>
+          </div>
+
+          <div class="collapsed-button fg-color">
+            <button type="button" id="button6434101" class="btn f-btn  button-md btn-success mobile-show"
+              style="color: #FFFFFF; background-color: #A7DBDB; border-radius:  0px!important; "></button>
+
+            <script>
+              $(function () {
+                var disableButton = function (e) {
+                  if (window['prsbutton6434101']) {
+                    e.preventDefault();
+                    return false;
+                  } else {
+                    $('#button6434101').addClass('disabled');
+                    window['prsbutton6434101'] = true;
+                    setTimeout(function () { window['prsbutton6434101'] = false; $('#button6434101').removeClass('disabled'); }, 6000);
+                  }
+                  return true;
+                };
+                $('#button6434101').click(function (e) {
+                  //disableButton(e);
+                  location.href = 'https://wa.me/79647736059';
+                });
+              });
+            </script>
+          </div>
+
+        </div>
+
+        <div class="main-container">
+          <div class="padding40px"></div>
+
+          <div class="leftside">
+            <div class="leftcontainer">
+              <a href="" class="fg-color">
+
+                <img
+                  src="//fs-thb03.getcourse.ru/fileservice/file/thumbnail/h/2bd310247d9f2ba578aad8864cfae650.png/s/f1200x/a/768320/sc/239">
+
+
+              </a>
+            </div>
+          </div>
+
+          <div class="centerside menualign-center">
+            <div class="centercontainer">
+              <ul class="menu-list">
+
+                <li class="list-item">
+                  <a href="/service" class="f-header fg-color">
+                    ГЛАВНАЯ </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="/price" class="f-header fg-color">
+                    О НАС </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="/contact" class="f-header fg-color">
+                    КРУЖКИ </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="" class="f-header fg-color">
+                    ГАЛЕРЕЯ </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="" class="f-header fg-color">
+                    КОМАНДА </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="" class="f-header fg-color">
+                    ОТЗЫВЫ </a>
+                </li>
+
+
+                <li class="list-item">
+                  <a href="" class="f-header fg-color">
+                    КОНТАКТЫ </a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="rightside">
+            <div class="rightcontainer">
+              <div class="right-descr fg-color">
+                <p><a href="tel:+79647736059"></a></p>
+              </div>
+
+              <div class="right-buttons">
+                <div class="right-buttons-wrap">
+                  <div class="right-buttons-but">
+                    <button type="button" id="button7578439" class="btn f-btn  button-md btn-success mobile-show"
+                      style="color: #FFFFFF; background-color: #A7DBDB; border-radius:  0px!important; "></button>
+
+                    <script>
+                      $(function () {
+                        var disableButton = function (e) {
+                          if (window['prsbutton7578439']) {
+                            e.preventDefault();
+                            return false;
+                          } else {
+                            $('#button7578439').addClass('disabled');
+                            window['prsbutton7578439'] = true;
+                            setTimeout(function () { window['prsbutton7578439'] = false; $('#button7578439').removeClass('disabled'); }, 6000);
+                          }
+                          return true;
+                        };
+                        $('#button7578439').click(function (e) {
+                          //disableButton(e);
+                          location.href = 'https://wa.me/79647736059';
+                        });
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="padding40px"></div>
+        </div>
+      </div>
+      <!--  -----    --  -- -----  --- ---     --- -->
+
+      <script>
+        $(function () {
+          $('#ltBlock2128608155').liteMenu({
+            position: "fixed"
+          })
+        });
+
+
+      </script>
+      <script>
+        clName = "btn-on";
+        // screenWidthBefore = 0;
+        toggler = document.querySelector("#ltBlock2128608155 .toggler");
+        stick = document.querySelector("#ltBlock2128608155 .toggler .fa.fa-bars");
+        nav = document.querySelector("#ltBlock2128608155 .main-container");
+        
+
+        toggler.addEventListener("pointerdown", (evn) => {
+          //evn.target.classList.toggle("btn-on");
+          el = evn.target;
+          if(el.classList.contains(clName)) {
+            el.classList.remove(clName);
+            nav.style.display = "none";
+          } else {
+            el.classList.add(clName);
+            nav.style.display = "block";
+          }
+          console.log("on")
+        });
+        
+      /*  
+        window.addEventListener("load", () => {
+          screenWidthBefore = window.screen.width;
+            if (screenWidthBefore < 768) {
+              if (nav.style.display != "none") {
+                nav.style.display = "none";
+              }
+            } else {
+              if(nav.style.display == "none") {
+                nav.style.display = "block";
+              }
+            }
+
+          });
+
+          window.addEventListener("resize", ()=> {
+            console.log(screenWidthBefore);
+            screenWidthAfter = window.screen.width;
+            deltaWidth = screenWidthBefore - screenWidthAfter;
+            
+            if(deltaWidth > 0) {
+              
+              if(window.screen.width < 768){
+                console.log("here");
+                if(toggler.classList.contains("btn-on")) {
+                  toggler.classList.remove("btn-on");
+                  nav.style.display = "none";
+                  for (let i = 0; i < nav.children.length; i++) {
+                    nav.children[i].style.display = "none";
+                  }
+
+                  console.log("done");
+                }
+
+              } else {
+
+              }
+            } else {
+              if (window.screen.width >= 768) {
+                  for (let i = 0; i < nav.children.length; i++) {
+                    nav.children[i].style.display = "block";
+                  }
+                } else {}
+            }
+            screenWidthBefore = screenWidthAfter;
+            // console.log(screenWidthBefore);
+            // console.log("---");
+          });  
+        */ 
+        // to do при клике на ссылку нужно закрывать кнопку??
+      </script>
+
+      <style>
+        #ltBlock2128608155 .fg-color {
+          color: #000000;
+        }
+
+        #ltBlock2128608155.lt-editing .menu-wrapper {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #ltBlock2128608155 .menu-wrapper {
+          background-color: rgba(245, 228, 245, 1);
+          ;
+        }
+
+        #ltBlock2128608155.positionfixed.scrolled .menu-wrapper {
+          background-color: rgba(245, 228, 245, 0.5);
+          ;
+        }
+
+        #ltBlock2128608155 .menu-wrapper,
+        #ltBlock2128608155 .main-container {
+          height: 100px;
+        }
+
+        .country-dropdown-wrapper {
+          padding-left: 10px;
+        }
+
+        @media screen and (max-width: 980px) {
+          #ltBlock2128608155 .menu-wrapper {
+            background-color: rgba(245, 228, 245, 1);
+            ;
+          }
+
+          #ltBlock2128608155.positionfixed.scrolled .menu-wrapper {
+            background-color: rgba(245, 228, 245, 0.5);
+            ;
+          }
+
+          #ltBlock2128608155.positionfixed .menu-wrapper.expanded {
+            background-color: rgba(245, 228, 245, 1);
+            ;
+          }
+        }
+      </style>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+
+  <div id="ltBlock2129044844" data-block-id="2129044844" class="lt-block lt-view raw-html lt-raw lt-raw-html"
+    data-code="b-69ff8">
+  
+    <div class="lt-block-wrapper">
+      <div id="rawHtml5961924" data-raw-editable="true" data-param="rawValue" data-mode="text/html">
+        
+        
+        <footer class="main-footer">
+          
+          <div class="main-footer__wrapper">
+            <div class="main-footer__container">
+          
+              <div class="main-footer__info-item">
+
+                <div class="main-footer__logo-wrapper">
+                  <a href="#">
+                    <img
+                      src="/images/icons/logo-text-white.svg"
+                      alt="Логотип ЦР Жаворонок" class="footer-logo" width="152">
+                  </a>
+                </div>
+          
+          
+                <h2 class="main-footer__text_uppercase main-footer__item-title">Реквизиты</h2>
+          
+                <div class="main-footer__info-item-content">
+                  <p class="main-footer__text">©2024 ИП КОРОЛЬКО В.Е.</p>
+                  <p class="main-footer__text">ИНН 772006619901</p>
+                  <p class="main-footer__text">ОГРНИП 319774600032508</p>
+                  
+                  <a href="https://school.zhavoron0k.ru/offer" class="main-footer__link">Договор-оферта</a>
+                  <a href="https://school.zhavoron0k.ru/privacy" class="main-footer__link">Политика обработки
+                      персональных данных</a>
+                </div>
+              </div>
+          
+              <div class="main-footer__info-item ">
+                <div class="main-footer__info-item_inner">
+                  <h2 class="main-footer__text_uppercase main-footer__item-title">Партнеры</h2>
+          
+                  <div class="main-footer__info-item-content">
+                    <a href="https://center.uchi.ru/golicyno/golicyno986_3" class="main-footer__link-pic">
+                      <img
+                        src="/images/icons/uchiRuWhiteNoFrames.png"
+                        height="10" alt="UchiRu">
+                    </a>
+                    <a href="https://aloharussia.ru/odintsovo" class="main-footer__link-pic">
+                      <img
+                        src="/images/icons/aloha_black_and_white.png"
+                        height="30" alt="Aloha">
+                    </a>
+
+                    <a href="https://golitsyno.algoritmika.org/ru" class="main-footer__link-pic">
+                      <img
+                        src="/images/icons/algoWhiteNoFrames.png"
+                        height="17" alt="algoritmika">
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="main-footer__info-item_inner">
+          
+                  <h2 class="main-footer__text_uppercase main-footer__item-title">Социальные сети</h2>
+          
+                  <div class="main-footer__info-item-content">
+                    <a href="#" class="main-footer__link-socials vk">ВКонтакте</a>
+                    <a href="#" class="main-footer__link-socials tg">Telegram</a>
+                    <a href="#" class="main-footer__link-socials wa">WhatsApp</a>
+                    <a href="#" class="main-footer__link-socials rt">Rutube</a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="main-footer__info-item">
+                <h2 class="main-footer__text_uppercase main-footer__item-title">Контакты</h2>          
+                <div class="main-footer__info-item-content">
+          
+                  <div class="main-footer__contact-container">
+                    <p class="main-footer__text ">Московская область, Одинцовский городской округ, Голицыно, Заводской
+                      проспект, 13</p>
+                  </div>
+          
+                  <div class="main-footer__contact-container">
+                    <a href="tel:+779164173385" class="main-footer__link ">8(964)-773-60-59</a>
+                  </div>
+          
+                  <div class="main-footer__contact-container">
+                    <a href="mailto:info@zhavoron0k.ru" class="main-footer__link ">info@zhavoron0k.ru</a>
+                  </div>
+          
+          
+                </div>
+          z
+              </div>
+            </div>
+          </div>
+          
+          
+          </footer>
+      </div>
+  
+    </div>
+  </div>
+
+
+  
+
+</body>
+
+</html>

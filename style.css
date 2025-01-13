@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'YuGothicUI Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/YuGothicUI-Semibold-03.woff2') format('woff2'),
+    url('/fonts/YuGothicUI-Semibold-03.woff') format('woff'),
+    url('/fonts/YuGothicUI-Semibold-03.ttf') format('ttf'),
+    url('/fonts/YuGothicUI-Semibold-03.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/bahnschrift.woff2') format('woff2'),
+    url('/fonts/bahnschrift.woff') format('woff'),
+    url('/fonts/bahnschrift.ttf') format('ttf'),
+    url('/fonts/bahnschrift.eot') format('eot');
+}
+
+@font-face {
+  font-family: "YuGothicUI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/YuGothicUI-Regular-02.ttf");
+}
+
+
+
+html {
+  height: 100%;
+  font-family: "YuGothicUI Regular", Arial, 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: #3B4043;
+  background-color: #68C2E2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lt-block-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container {
+  margin: 0 15px;
+  padding: 20px;
+  background-color: #FCFEFE;
+  border-radius: 15px;
+}
+/* menu */
+  /* to help  - start -*/
+/* 
+  .collapsed-view,
+  .main-container,
+  li{
+    outline: 1px dotted blue;
+    outline-offset: -1px;
+  }
+
+  .toggler, 
+  .collapsed-content,
+  .collapsed-contacts .fg-color,
+  .collapsed-button .fg-color,a {
+    outline: 1px dotted mediumvioletred;
+    outline-offset: -1px;
+  } */
+  /* to help  - end -*/
+
+#ltBlock2128608155 .menu-wrapper {
+  background-color: #FCFEFE!important;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10px; 
+  min-height: 65px!important;
+  height: auto!important;
+}
+
+#ltBlock2128608155 .main-container {
+  display: none;
+  height: auto!important;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #FCFEFE!important;
+}
+
+#ltBlock2128608155 .collapsed-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+/* image logo */
+#ltBlock2128608155 .collapsed-content {
+    order: 0;
+    margin-right: auto;
+}
+
+/* phone */
+#ltBlock2128608155 .collapsed-contacts {
+  order: 2;
+  margin-right: 15px;
+}
+
+#ltBlock2128608155 .collapsed-contacts.fg-color  a,
+#ltBlock2128608155 .main-container .rightside a {
+  display: block;
+  width: 1.22rem; /* 20px */
+  height: 1.22rem;
+  background-image: url("/images/icons/phone-black-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* wa */
+#ltBlock2128608155 .collapsed-button {
+  order: 3;
+  margin-right: 20px;
+}
+
+#ltBlock2128608155 .collapsed-button .btn.mobile-show,
+#ltBlock2128608155 .main-container .rightside .btn.mobile-show {
+  color: #000!important;
+  background-color: transparent!important;
+  border-radius: 0px !important;
+  border: none;
+  width: 1.22rem;
+  height: 1.22rem;
+  display: block;
+  background-image: url("/images/icons/wa-black-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 1px;
+}
+
+#ltBlock2128608155 .collapsed-contacts.fg-color  a:hover,
+#ltBlock2128608155 .collapsed-button .btn.mobile-show:hover {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+
+#ltBlock2128608155 .collapsed-contacts.fg-color  a:hover,
+#ltBlock2128608155 .collapsed-button .btn.mobile-show:hover {
+  transform: scale(1.2);
+}
+
+/* toggler */
+#ltBlock2128608155 .toggler {
+  order: 4;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  background-color: #A0CC5F;
+  border-radius: 3px;
+  box-shadow: rgba(0,0,0,0.3) 1px 1px 1px;
+  outline-color: transparent;
+}
+
+#ltBlock2128608155 .toggler .fa.fa-bars {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+
+}
+
+#ltBlock2128608155 .toggler.btn-on .fa.fa-bars {
+  transform: rotate(45deg);
+  top: 3px;
+  left: 7px;
+}
+
+#ltBlock2128608155 .toggler .fa.fa-bars::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  opacity: 1;
+  transform-origin: left center;
+  transition: .25s ease-in-out;
+}
+
+#ltBlock2128608155 .toggler.btn-on .fa.fa-bars::before {
+  width: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+#ltBlock2128608155 .toggler .fa.fa-bars::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#ltBlock2128608155 .toggler.btn-on .fa.fa-bars::after {
+  transform: rotate(-90deg);
+  top: 11px;
+  left: 11px;
+}
+
+#ltBlock2128608155 .collapsed-content img {
+  height: 50px;
+}
+
+#ltBlock2128608155 .main-container .leftside,
+#ltBlock2128608155 .main-container .rightside {
+  display: none;
+}
+
+#ltBlock2128608155 .main-container .centerside {
+  font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+  font-stretch: 87%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#ltBlock2128608155 .list-item a{
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+#ltBlock2128608155 .list-item a:hover,
+#ltBlock2128608155 .list-item a:active {
+  color: #9FD053;
+}
+
+
+/* --------------- tablet ------------------ */
+
+@media screen and (min-width: 768px){
+  #ltBlock2128608155 .menu-wrapper {
+    background-color: transparent!important;
+    padding: 0px;
+    width: 100%;
+  }
+
+  #ltBlock2128608155 .collapsed-view {
+    display: none;
+  }
+
+  #ltBlock2128608155 .main-container {
+    padding: 15px 30px;
+    display: grid!important;
+    grid-template-columns: 1fr 75px;
+    grid-template-areas: "a b" "d d";
+
+  }
+
+  #ltBlock2128608155 .main-container .leftside {
+    display: block;
+    grid-area: a;
+  }
+
+  #ltBlock2128608155 .main-container .rightside {
+    display: block;
+    grid-area: b;
+  }
+
+  #ltBlock2128608155 .main-container .menu-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #ltBlock2128608155 .rightside .rightcontainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  #ltBlock2128608155  .centerside {
+    grid-area: d;
+  }
+  #ltBlock2128608155  .centerside .centercontainer {
+    margin:0 30px;
+  }
+  #ltBlock2128608155 .main-container .leftside img {
+    height: 50px;
+  }
+  
+  #ltBlock2128608155 .list-item a {
+    font-size: 18px;
+    line-height: 18px;
+    padding:  7px 0px 5px;
+  }
+
+  #ltBlock2128608155 .main-container .rightside a, 
+  #ltBlock2128608155 .main-container .rightside .btn.mobile-show {
+    transform: scale(1);
+    transition: ease-in-out 0.2s;
+  }
+
+  #ltBlock2128608155 .main-container .rightside a:hover, 
+  #ltBlock2128608155 .main-container .rightside .btn.mobile-show:hover {
+    transform: scale(1.2);
+  }
+
+}
+/* --------------- desktop ------------------ */
+
+@media screen and (min-width: 900px) {
+
+  #ltBlock2128608155 .list-item a {
+    font-size: 20px;
+    line-height: 20px;
+    padding:  10px 0px 5px;
+  }
+
+  #ltBlock2128608155 .main-container {
+    margin: 0 auto;
+    max-width: 920px;
+    
+  }
+
+}

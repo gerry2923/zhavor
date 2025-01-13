@@ -1,0 +1,16 @@
+https://fs.getcourse.ru/fileservice/file/download/a/768320/sc/297/h/aaeae9f529a80e76035d2ef227ca9f92.mp4
+
+ <source
+      src="https://fs.getcourse.ru/fileservice/file/download/a/768320/sc/260/h/8d3b84a33ff71e888f9ff1cb4c626b34.ogv"
+      type="video/ogg">
+    <source
+      src="https://fs.getcourse.ru/fileservice/file/download/a/768320/sc/386/h/e4adf8bb5a11dae7c299b48ea7077ce1.avi"
+      type="video/avi">
+    <source
+      src="https://fs.getcourse.ru/fileservice/file/download/a/768320/sc/488/h/adcbc88b15cbc737ccffbd43476eec94.webm"
+      type="video/webm">
+    </source>
+
+ltBlock2095123572
+
+#ltBlock2121912386 .builder.animated-block
