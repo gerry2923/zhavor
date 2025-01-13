@@ -1,0 +1,13 @@
+#ltBlock2130045152 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;    
+    background-image: url("https://fs.getcourse.ru/fileservice/file/download/a/768320/sc/395/h/063826ec6cd5f3bc2cf66c6b2fbfd9c8.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
