@@ -48,8 +48,8 @@
     position: absolute;
     top: -11px;
     left: -11px;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
 
     background-image: url("images/decor/chess.png");
     background-repeat: no-repeat;
@@ -65,12 +65,27 @@
     right: -65px;
     width: 150px;
     height: 150px;
-    /* overflow: hidden; */
     background-image: url("images/decor/decor1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
+
+@media screen and (min-width: 481px) {
+    #ltBlock2129045428 .container::before {
+        width: 70px;
+        height: 70px;
+        left: -20px;
+    }
+
+    #ltBlock2129045428 .container::after {
+        top: 0px;
+        right: -60px;
+        width: 160px;
+        height: 160px;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     #ltBlock2129045428 .lt-block-wrapper {
@@ -86,6 +101,7 @@
 
     #ltBlock2129045428 .text-normal p {
         font-size: 1rem;
+        line-height: 1.4em;
     }
 
     #ltBlock2129045428 .f-header.f-header-36 {
@@ -95,20 +111,41 @@
     #ltBlock2129045428 .builder-item.part-text:nth-child(5) .text-large {
         font-size: 2rem;
     }
+
+    #ltBlock2129045428 .container::before {
+        width: 100px;
+        height: 100px;
+        top: -25px;
+        left: -25px;
+    }
+
+    #ltBlock2129045428 .container::after {
+        top: 0px;
+        right: -94px;
+        width: 220px;
+        height: 220px;
+    }
 }
 
-/* @media screen and (min-width: 768px) {
-    #ltBlock2129045428 .lt-block-wrapper {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 35px;
-    }
-} */
 
 @media screen and (min-width: 900px) {
     #ltBlock2129045428 .lt-block-wrapper {
         padding-left: 65px;
         padding-right: 65px;
         margin-bottom: 45px;
+    }
+
+    #ltBlock2129045428 .container::before {
+        width: 120px;
+        height: 120px;
+        top: -35px;
+        left: -50px;
+    }
+
+    #ltBlock2129045428 .container::after {
+        top: 0px;
+        right: -135px;
+        width: 280px;
+        height: 280px;
     }
 }
