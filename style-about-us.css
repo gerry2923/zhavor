@@ -1,0 +1,114 @@
+#ltBlock2129045428 .lt-block-wrapper {
+    margin-bottom: 20px;
+}
+
+#ltBlock2129045428 .text-normal p {
+    font-size: 0.89rem;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+#ltBlock2129045428 .builder-item.part-header {
+    margin-bottom: 20px!important;
+}
+
+#ltBlock2129045428 .f-header.f-header-36 {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1em;
+    color: #131516;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#ltBlock2129045428 .builder-item.part-text:nth-child(5) {
+    margin-bottom: 0px!important;
+} 
+
+#ltBlock2129045428 .builder-item.part-text:nth-child(5) .text-large {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1em;
+    color: #2188BD;
+    text-align: center;
+}
+
+#ltBlock2129045428 .container {
+    position: relative;
+    outline: 1px dotted greenyellow;
+}
+
+#ltBlock2129045428 .container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    width: 40px;
+    height: 40px;
+
+    background-image: url("images/decor/chess.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ltBlock2129045428 .container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    width: 150px;
+    height: 150px;
+    /* overflow: hidden; */
+    background-image: url("images/decor/decor1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+    #ltBlock2129045428 .lt-block-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 35px;
+    }
+
+    #ltBlock2129045428 .container {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    #ltBlock2129045428 .text-normal p {
+        font-size: 1rem;
+    }
+
+    #ltBlock2129045428 .f-header.f-header-36 {
+        font-size: 2rem;
+    }
+
+    #ltBlock2129045428 .builder-item.part-text:nth-child(5) .text-large {
+        font-size: 2rem;
+    }
+}
+
+/* @media screen and (min-width: 768px) {
+    #ltBlock2129045428 .lt-block-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 35px;
+    }
+} */
+
+@media screen and (min-width: 900px) {
+    #ltBlock2129045428 .lt-block-wrapper {
+        padding-left: 65px;
+        padding-right: 65px;
+        margin-bottom: 45px;
+    }
+}

@@ -76,11 +76,13 @@ a {
 
 .lt-block-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1050px;
+  min-width: 320px;
+  padding: 0 20px;
 }
 
 .container {
-  margin: 0 15px;
+  margin: 0 0px;
   padding: 20px;
   background-color: #FCFEFE;
   border-radius: 15px;
@@ -292,7 +294,12 @@ a {
 
 /* --------------- tablet ------------------ */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  #ltBlock2128608155 .lt-block-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
   #ltBlock2128608155 .menu-wrapper {
     background-color: transparent!important;
     padding: 0px;
@@ -371,9 +378,14 @@ a {
     padding:  10px 0px 5px;
   }
 
+  #ltBlock2128608155 .lt-block-wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
   #ltBlock2128608155 .main-container {
     margin: 0 auto;
-    max-width: 920px;
+    /* max-width: 920px; */
     
   }
 

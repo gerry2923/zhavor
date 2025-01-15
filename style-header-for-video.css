@@ -1,0 +1,88 @@
+#ltBlock2130094094 .container {
+    border-radius: 0px;
+    margin: 0px;
+    padding: 8px 20px 1px;
+}
+#ltBlock2130094094 .builder-item.part-header {
+    margin: 0;
+}
+
+#ltBlock2130094094 .f-header {
+    width: 100%;
+    padding: 0 0px; /* 35px */
+    text-align: center;
+    position: relative;
+}
+
+#ltBlock2130094094 .f-header p {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1em;
+    color: #2188BD; /* rgb(92, 217, 255) */;
+    /* text-transform: uppercase; */
+}
+
+#ltBlock2130094094 .f-header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    bottom: -11px;
+    right: -8px;
+
+    background-image: url("/images/decor/cat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* outline:  1px solid blue; */
+}
+
+@media screen and (min-width: 506px) {
+    #ltBlock2130094094 .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 586px) {
+    #ltBlock2130094094 .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #ltBlock2130094094 .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 15px;
+    }
+    
+    #ltBlock2130094094 .f-header::after {
+        width: 100px;
+        height: 60px;
+        bottom: -25px;
+    }
+
+    #ltBlock2130094094 .f-header p {
+        font-size: 2rem;
+    }
+
+    #ltBlock2130094094 .lt-block-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    #ltBlock2130094094 .lt-block-wrapper {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+}
