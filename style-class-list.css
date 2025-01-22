@@ -24,6 +24,12 @@
     outline-offset: -1px;
 }
 
+.class-list__item:not(:last-child) {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
 #ltBlock2131531499 .class-card__title {
     font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
     font-stretch: 87%;
@@ -39,10 +45,30 @@
     text-align: left;
 }
 
-.class-list .class-card__img-wrapperi img {
+.class-card .class-card__img-wrapper{
     height: 90px;
+    text-align: center;
 }
 
+.class-card img {
+    height: 78%;
+}
+.class-card__title,
+.class-card__text {
+    margin-bottom: 10px;
+}
+
+.class-card__link-container {
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+
+.class-card__link {
+    vertical-align: middle;
+}
 
 @media screen and (min-width: 768px) {
     #ltBlock2131531499 .lt-block-wrapper {
