@@ -1,0 +1,81 @@
+#ltBlock2131488542 .lt-block-wrapper,
+#ltBlock2131488725 .lt-block-wrapper {
+    margin: 0 auto;
+    max-width: 1050px;
+    min-width: 320px;
+    padding: 0 20px;
+
+}
+
+#ltBlock2131488542 .lt-block-wrapper {
+    margin-bottom: 20px;
+}
+
+#ltBlock2131488542 .container,
+#ltBlock2131488725 .container {
+    margin: 0 0px;
+    padding: 20px;
+    background-color: #FCFEFE;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ltBlock2131488542 .container  .builder-item.part-header.text-center,
+#ltBlock2131488725 .container .builder-item.part-header.text-center{
+    margin-bottom: 0!important;
+}
+
+#ltBlock2131488542 .f-header.f-header-64,
+#ltBlock2131488725 .f-header.f-header-64 {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* subheader */
+#ltBlock2131488725 .f-subheader.f-subheader-sm.f-text-transform-uppercase {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1em;
+    text-transform: none;
+    text-align: center;
+}
+
+#ltBlock2131488725 .builder-item.part-subheader {
+    margin-bottom: 0px!important;
+    padding-top: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #ltBlock2131488542 .lt-block-wrapper,
+    #ltBlock2131488725 .lt-block-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #ltBlock2131488542 .lt-block-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    #ltBlock2131488542 .lt-block-wrapper,
+    #ltBlock2131488725 .lt-block-wrapper {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    #ltBlock2131488542 .lt-block-wrapper {
+        margin-bottom: 45px;
+    }
+
+}
