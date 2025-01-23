@@ -71,7 +71,7 @@
     background-position: center;
     background-size: contain;
     overflow: hidden;
-    /* display: none; */
+    display: none;
 }
 
 @media screen and (min-width: 481px) {

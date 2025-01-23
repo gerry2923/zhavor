@@ -1,0 +1,59 @@
+/* additional */
+.team-list * {
+    outline: 1px dotted goldenrod;
+    outline-offset: -1px;
+}
+
+
+#ltBlock2131531453 .lt-block-wrapper {
+    margin-bottom: 0px;
+}
+
+#ltBlock2131531453 .lt-block-wrapper {
+    margin: 0 auto 20px;
+    max-width: 1050px;
+    min-width: 320px;
+    padding: 0 20px;
+}
+
+#ltBlock2131531453 .container {
+    margin: 0 0px;
+    padding: 0 20px 20px;
+    background-color: #FCFEFE;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    #ltBlock2131531453 .lt-block-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+    #ltBlock2131531453 .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    #ltBlock2131531453 .lt-block-wrapper {
+        padding-left: 65px;
+        padding-right: 65px;
+        margin-bottom: 45px;
+    }
+
+   
+    #ltBlock2131531453 .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+}
+
