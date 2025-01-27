@@ -17,7 +17,7 @@
 }
 
 #ltBlock2131531453 .container {
-    margin: 0 0px;
+    margin: 0 0;
     padding: 0 20px 20px;
     background-color: #FCFEFE;
     border-bottom-left-radius: 15px;
@@ -25,8 +25,61 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
+/* cards  */
 
+.person-card__title {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-stretch: 87%;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1em;
+    text-transform: none;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.person-card__subtitle {
+    font-family: "YuGothicUI Semibold", Arial, 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.1em;
+    font-style: none;
+    flex-grow: 1;
+}
+.person-card__description {
+    /* display: none; */
+    font-size: 0.75rem;
 
+}
+.person-card__button {
+    font-size: 0.75em;   
+}
+
+.person-card {
+    border-radius: 10px;
+    border: 3px solid #50AFD8;
+    margin-bottom: 15px;
+    display: flex;
+    padding: 30px 15px 15px;
+
+}
+
+#ltBlock2131531453 .person-card__text-block-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#ltBlock2131531453 .person-card__img-container {
+    width: 75px;
+    padding-top: 15px;
+    margin-right: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+#ltBlock2131531453 .person-card img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
 
 
 @media screen and (min-width: 768px) {
