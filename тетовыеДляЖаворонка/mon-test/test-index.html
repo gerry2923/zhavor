@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-video-list.css">
   <title>test-mon</title>
 </head>
 
@@ -144,6 +145,139 @@
     </div>
 
   </div>
+
+  <div class="video__container">
+    <div class="main-video">
+      <div class="video">
+        <video src="https://youtu.be/h_kj53eRMnI?si=3FuXfJRN33s3E7zh" controls="controls" muted="muted"
+          autoplay="autoplay"></video>
+        <!-- <iframe width="607" height="360" src="https://www.youtube.com/embed/22UlSxdGFUk" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe> -->
+        <h3 class="video__title">01</h3>
+      </div>
+    </div>
+
+    <div class="video-list">
+      <div class="vid active">
+        <iframe width="169" height="100" src="https://www.youtube.com/embed/r5avwcJRGyE?controls=0" frameborder="0"
+          allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 class="video__title">01</h3>
+      </div>
+      <div class="vid">
+        <iframe width="169" height="100" src="https://www.youtube.com/embed/hetTUyVpNRQ"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+          allowfullscreen></iframe>
+        <h3 class="video__title">02</h3>
+      </div>
+      <div class="vid">
+        <iframe width="169" height="100" src="https://www.youtube.com/embed/OWUp0APuHcs"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+          allowfullscreen></iframe>
+        <h3 class="video__title">03</h3>
+      </div>
+      <div class="vid">
+        <iframe width="169" height="100" src="https://www.youtube.com/embed/pktgHhlWGbc"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+          allowfullscreen></iframe>
+        <h3 class="video__title">01</h3>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="desktop_3" unique-script-id="w-w-dm-id">
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <div class="swiper-container mySwiper">
+          <div class="btn">
+            <div class="swiper-button-nexts">
+              <img class="nextArrow"
+                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Vector.png">
+            </div>
+            <div class="swiper-button-prevs">
+              <img class="prevArrow"
+                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Vector.png">
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="mainImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d11.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="mainImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d11.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="mainImage" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/d11.png">
+            </div>
+          </div>
+          <div class="swiper-pagination">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-lg-4">first slider<div class="slider">
+  <div>
+    
+    <iframe name="slider" width="720" height="405" src="https://rutube.ru/play/embed/3cd9bc7c51ced47041626eea29c5ebdb/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  <!-- <iframe width="720" height="405" src="https://rutube.ru/play/embed/ed72f67a7cf74ecc5764317e4861fff6/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/8f7db18f244470ab5bab96a8b09cfafe/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/edd13dd64b9cd17912c1145e9747208a/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/fa910ef8c3be8986556de6906c889456/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  -->
+
+  <span>
+    <a href="https://rutube.ru/play/embed/ed72f67a7cf74ecc5764317e4861fff6/" target="slider">●
+</a><a href="https://rutube.ru/play/embed/8f7db18f244470ab5bab96a8b09cfafe/" target="slider">●
+</a><a href="https://rutube.ru/play/embed/edd13dd64b9cd17912c1145e9747208a/" target="slider">●
+</a><a href="https://rutube.ru/play/embed/fa910ef8c3be8986556de6906c889456/" target="slider">●</a>
+  </span>
+</div></div>
+  
+
+
+
+  <script>
+    let listVideo = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video iframe');
+    let title = document.querySelector('.main-video .video__title');
+
+    listVideo.forEach(video => {
+      video.onclick = () => {
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if (video.classList.contains('active')) {
+          let src = video.children[0].getAttribute('src');
+          mainVideo.src = src;
+          let text = video.children[1].innerHTML;
+          title.innerHTML = text;
+
+        };
+      };
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(`[unique-script-id="w-w-dm-id"] .mySwiper`, {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 5,
+      pagination: {
+        el: `[unique-script-id="w-w-dm-id"] .swiper-pagination`,
+        clickable: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: `[unique-script-id="w-w-dm-id"] .swiper-button-nexts`,
+        prevEl: `[unique-script-id="w-w-dm-id"] .swiper-button-prevs`,
+      },
+    });
+  </script>
 
 </body>
 

@@ -10,3 +10,5 @@ function menuBtnClicked(event) {
 }
 
 togglerStick.addEventListener('pointerdown', menuBtnClicked);
+
+

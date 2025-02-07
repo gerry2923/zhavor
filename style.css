@@ -87,24 +87,7 @@ a {
   background-color: #FCFEFE;
   border-radius: 15px;
 }
-/* menu */
-  /* to help  - start -*/
-/* 
-  .collapsed-view,
-  .main-container,
-  li{
-    outline: 1px dotted blue;
-    outline-offset: -1px;
-  }
 
-  .toggler, 
-  .collapsed-content,
-  .collapsed-contacts .fg-color,
-  .collapsed-button .fg-color,a {
-    outline: 1px dotted mediumvioletred;
-    outline-offset: -1px;
-  } */
-  /* to help  - end -*/
 
 #ltBlock2128608155 .menu-wrapper {
   background-color: #FCFEFE!important;
@@ -290,7 +273,6 @@ a {
 #ltBlock2128608155 .list-item a:active {
   color: #9FD053;
 }
-
 
 /* --------------- tablet ------------------ */
 

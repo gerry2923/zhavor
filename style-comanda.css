@@ -1,57 +1,53 @@
-/* additional */
-.team-list * {
-    /* outline: 1px dotted goldenrod;
-    outline-offset: -1px; */
+/* borders  */
+ul {
+    outline: 1px solid royalblue;
+    outline-offset: -1px; 
 }
 
-
-#ltBlock2131531453 .lt-block-wrapper {
-    margin-bottom: 0px;
+ul * {
+    outline: 1px dotted greenyellow ;
+    outline-offset: -1px; 
 }
-
+.hide {
+    display: none!important;
+}
 #ltBlock2131531453 .lt-block-wrapper {
-    margin: 0 auto 20px;
-    max-width: 1050px;
-    min-width: 320px;
-    padding: 0 20px;
+    margin-bottom: 35px;
 }
 
 #ltBlock2131531453 .container {
-    margin: 0 0;
-    padding: 0 20px 20px;
-    background-color: #FCFEFE;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-}
-/* cards  */
-
-.team-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.person-card {
-    border-radius: 10px;
-    border: 3px solid #50AFD8;
-    margin-bottom: 15px;
-    padding: 20px 15px 15px;
-    max-width: 460px;
+    border-top-right-radius: 0px;
     width: 100%;
 }
 
+.team-list {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    margin-bottom: 20px;
+}
+
+.person-card {
+    max-width: 420px;
+    min-width: 215px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid #50AFD8;
+}
 
 .person-card__title {
     font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
     font-stretch: 87%;
     text-decoration: none;
     font-size: 1.2rem;
-    line-height: 1em;
+    line-height: 1.05em;
     text-transform: none;
+    width: 100%;
     text-align: left;
     margin-bottom: 7px;
+
 }
 .person-card__subtitle {
     font-family: "YuGothicUI Semibold", Arial, 'Open Sans', sans-serif;
@@ -62,37 +58,15 @@
     font-weight: 500;
 }
 .person-card__description {
-    display: none;
     font-size: 0.78rem;
     line-height: 1.1em;
-
 }
 
-
-.person-card__row_header {
-    display: flex;
-    align-items: center;
-}
-
-.person-card__row {
-    margin-bottom: 10px;
-}
-
-.person-card__row:last-child {
-    margin-bottom: 0px;
-}
-
-#ltBlock2131531453 .person-card__text-block-container {
-    display: flex;
-    flex-direction: column;
-}
-
-#ltBlock2131531453 .person-card__img-container {
+.person-card__img-container {
     width: 75px;
-    padding-top: 15px;
-    margin-right: auto;
+    /* padding-top: 15px; */
     flex-shrink: 0;
-    margin-right: 15px;
+    margin-right: 10%;
 }
 
 #ltBlock2131531453 .person-card__img {
@@ -101,85 +75,72 @@
     height: 75px;
 }
 
+#ltBlock2131531453 .person-card__img:hover {
+    transform: scale(2) translate(30px, 25px);
+    transition: ease-in-out 0.2s;
 
-#ltBlock2131531453 .person-card__button-wrapper {
-    width: 100%;
+}
+
+.person-card__row_header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: first baseline;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#ltBlock2131531453 .person-card__button {
-    display: block;
-    /* outline: none; */
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    color: #50AFD8;
-    font-weight: 500;
-    letter-spacing: 1.1px;
-    /* width: 100%; */
+
+.person-card__row {
+    /* display: flex;
+    flex-direction: column; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.person-card__subtitle {
+    margin-bottom: 10px;
     text-align: center;
-    padding: 10px 0px;
-    font-size: 0.75em;
-    width: 204px;   
-    position: relative;
+    /* align-self: center; */
 }
 
-
-#ltBlock2131531453 .person-card__button::after {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-   
-    background-color: #50AFD8;
-    position: absolute;
-    top: 10px;
-    right: 11px;
+.person-card__description {
+    margin-bottom: 10px;
 }
 
-#ltBlock2131531453 .person-card__button_more::after {
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
-
-
-#ltBlock2131531453 .person-card__button_less::after {
-    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
-    top: 8px;
-    right: 42px;
-}
-
-
-#ltBlock2131531453 .team-list__show {
+.team-list-btn__show {
     display: block;
-    /* outline: none; */
-    background-color: #50AFD8;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-weight: 500;
-    letter-spacing: 1.1px;
-    width: 100%;
-    max-width: 460px;
-    text-align: center;
-    padding: 5px 0px;
     margin: 0 auto;
+    outline: none;
+    border: none;
+    background-color:  #50AFD8;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
 }
 
-#ltBlock2131531453 .person-card__button_less {
-    display: none;
-    /* display: block; */
+@media screen and (min-width: 480px) {
+    .person-card__img-container {
+        width: 100px;
+        margin-right: 10%;
+    }
+
+    #ltBlock2131531453 .person-card__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .person-card__title {
+        font-size: 1.28rem;
+    }
+    .person-card__subtitle {
+        font-size: 0.78rem;
+    }
+    .person-card__description {
+        font-size: 0.89rem;
+    }
 }
 
-#ltBlock2131531453 .person-card__button_more {
-    display: block;
-    /* display: none; */
-}
-
-
-#ltBlock2131531453 .team-list__show_less {
-    display: none;
-}
 
 @media screen and (min-width: 768px) {
     #ltBlock2131531453 .lt-block-wrapper {
@@ -192,21 +153,16 @@
         padding-right: 30px;
     }
 
-    #ltBlock2131531453 .team-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
+    .team-list {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
-    #ltBlock2131531453 .person-card {
-        max-width: 382px;
+
+    .team-list-btn__show {
+        max-width: none;
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    /* #ltBlock2131531453 .person-card__img-container {
-        width: 100px;
-    }
-    #ltBlock2131531453 .person-card__img {
-        width: 100px;
-        height: 100px;
-    } */
     
 }
 
@@ -223,13 +179,30 @@
         padding-right: 45px;
     }
 
-
-    #ltBlock2131531453 .team-list {
-        grid-template-columns: 1fr 1fr 1fr;
+    .team-list {
+        grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
     }
 
-    #ltBlock2131531453 .person-card {
-        max-width: 266px;
+    .person-card__img-container {
+        width: 75px;
+    }
+
+    #ltBlock2131531453 .person-card__img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .person-card__title {
+        font-size: 1.2rem;
+    }
+
+    .person-card__title span {
+        font-size: 0.9em;
+    }
+    .person-card__subtitle {
+        font-size: 0.7rem;
+    }
+    .person-card__description {
+        font-size: 0.78rem;
     }
 }
-

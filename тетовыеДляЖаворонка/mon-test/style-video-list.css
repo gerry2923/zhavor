@@ -1,0 +1,571 @@
+.video__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+.video__container .main-video {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.video__container .main-video video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video__container .main-video .video__title {
+    color: #333;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.video__container .video-list {
+    background-color: #fff;
+    border-radius:  5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.video__container .video-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.video__container .video-list::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 50px;
+}
+
+.video__container .video-list::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 50px;
+}
+
+.video__container .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.video__container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.video__container .video-list .vid:hover {
+    background: #eee;
+}
+
+.video__container .video-list .vid.active {
+    background: #2980b9;
+}
+
+.video__container .video-list .vid.active .video__title{
+    color: #fff;
+}
+
+.video__container .video-list .vid  .video__title{
+    color: #333;
+    font-size: 17px;
+}
+
+@media (max-width: 991px) {
+    .video__container {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px
+    }
+}
+
+@media (max-width: 768px) {
+    .video__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.desktop_3 .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .desktop_3 .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
+  
+  .desktop_3 .btn {
+    z-index: 1000;
+    right: 0px;
+    left: 0px;
+    margin-top: 14%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  .desktop_3 .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    overflow: hidden;
+  }
+  
+  .desktop_3 .responsive-container-block.Container {
+    max-width: 1320px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+  
+  .desktop_3 .swiper-wrapper {
+    display: flex;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+  }
+  
+  .desktop_3 .swiper-pagination.container-block {
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .desktop_3 .swiper-pagination {
+    position: static;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  .desktop_3 .swiper-container.mySwiper {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    max-width: 100%;
+  }
+  
+  .desktop_3 .swiper-button-nexts {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 0px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+  }
+  
+  .desktop_3 .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    flex-direction: row-reverse;
+    position: absolute;
+  }
+  
+  .desktop_3 .swiper-button-prevs {
+    cursor: pointer;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+  }
+  
+  .desktop_3 .prevArrow {
+    transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  }
+  
+  .desktop_3 .mainImage {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .desktop_3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    opacity: 0.3;
+  }
+  
+  .desktop_3 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .desktop_3 .nextArrow {
+    width: 10px;
+  }
+  
+  .desktop_3 .swiper-container-horizontal&gt;
+  
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 0px;
+    margin-right: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #1479f6;
+  }
+  
+  @media (max-width: 1024px) {
+    .desktop_3 .swiper-button-prevs {
+      padding-top: 13px;
+      padding-right: 17px;
+      padding-bottom: 13px;
+      padding-left: 17px;
+    }
+  
+    .desktop_3 .swiper-button-nexts {
+      padding-top: 13px;
+      padding-right: 17px;
+      padding-bottom: 13px;
+      padding-left: 17px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .desktop_3 .swiper-button-prevs {
+      padding-top: 10px;
+      padding-right: 14px;
+      padding-bottom: 10px;
+      padding-left: 14px;
+    }
+  
+    .desktop_3 .swiper-button-nexts {
+      padding-top: 10px;
+      padding-right: 14px;
+      padding-bottom: 10px;
+      padding-left: 14px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .desktop_3 .swiper-button-nexts {
+      margin-top: 0px;
+      margin-right: 20px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 7px;
+      padding-right: 11px;
+      padding-bottom: 7px;
+      padding-left: 11px;
+    }
+  
+    .desktop_3 .swiper-button-prevs {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 20px;
+      padding-top: 7px;
+      padding-right: 11px;
+      padding-bottom: 7px;
+      padding-left: 11px;
+    }
+  
+    .desktop_3 .responsive-container-block.Container {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+    }
+  
+    .desktop_3 .responsive-container-block.bigContainer {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
+  }
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
+    width: 50%;
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
+
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
+
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
+
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
+
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
